@@ -1,0 +1,55 @@
+
+
+
+/* ============================================= */
+/*              Image Variables                  */
+/* ============================================= */
+
+$img-border-color: #ccc;
+$img-border-width: 1px;
+$img-padding: 13px;
+$avatar-max-width: 100%;
+$avatar-max-height: 100%;
+
+/* ============================================= */
+/*              Image Styles                     */
+/* ============================================= */
+
+/* Avatar Image */
+.img-avatar {
+  display: block;
+  margin: 10px auto; /* Centers the avatar with margin */
+  max-width: $avatar-max-width;
+  max-height: $avatar-max-height;
+  border-radius: 50%; /* Makes the image round */
+}
+
+/* Framed Image */
+.img-frame {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  padding: $img-padding;
+  border: $img-border-width solid $img-border-color;
+  border-radius: $border-radius; /* Adds rounded corners */
+}
+
+/* Logo Image */
+.img-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================================= */
+/*              Responsive Image Styles          */
+/* ============================================= */
+
+@media (min-width: 768px) {
+  /* Additional larger screen styles, if needed */
+  .img-avatar, .img-frame, .img-logo {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,77 @@
+/* _variables.scss */
+
+/* ============================================= */
+/*              Color Variables                  */
+/* ============================================= */
+
+$color-primary: #58e1c1;
+$color-secondary: #777;
+$color-link: #51ddfc;
+$color-border: #ccc;
+$color-font: #777;
+
+/* Grid Colors */
+$color-col-1: #927bc1;
+$color-col-2: #fd7856;
+$color-col-3: #deb2ee;
+$color-col-4: #7ee6fd;
+$color-col-5: #88d9a0;
+$color-col-6: #4da2bb;
+$color-col-7: #ec9fa3;
+$color-col-8: #fd9f85;
+$color-col-9: #e4757a;
+$color-col-10: #63cc82;
+$color-col-11: #51ddfc;
+$color-col-12: #80e8d1;
+
+/* Button Colors */
+$color-btn-default: #51ddfc;
+$color-btn-error: #e4757a;
+$color-btn-info: #927bc1;
+$color-btn-success: #63cc82;
+$color-btn-warning: #fd7856;
+
+/* ============================================= */
+/*              Font Variables                   */
+/* ============================================= */
+
+$font-family-primary: 'Lato', sans-serif;
+$font-size-default: 100%; /* equivalent to 16px */
+$font-size-small: 80%; /* equivalent to 12.8px */
+$font-size-large: 1.5em; /* for blockquotes */
+
+/* Font Weights */
+$font-weight-normal: 400;
+$font-weight-light: 300;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+/* ============================================= */
+/*              Spacing Variables                */
+/* ============================================= */
+
+$spacing-base: 10px;
+$spacing-small: 5px;
+$spacing-large: 15px;
+$spacing-xlarge: 20px;
+
+/* Border Radius */
+$border-radius: 5px;
+
+/* ============================================= */
+/*              Border Variables                 */
+/* ============================================= */
+
+$border-width: 1px;
+$border-solid: solid;
+
+/* ============================================= */
+/*              Miscellaneous Variables          */
+/* ============================================= */
+
+$line-height-default: 1.45em;
+$line-height-condensed: 1.15;
+
+/* Transition */
+$transition-duration: 0.2s;
+$transition-ease: ease-in-out;

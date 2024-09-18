@@ -1,0 +1,23 @@
+
+/* ============================================= */
+/*                Form                            */
+/* ============================================= */
+
+
+.input {
+  display: block;
+  width: 94%;
+  margin: $spacing-base auto 0;
+  border: none;
+  padding: $spacing-base;
+  border-bottom: 5px solid $color-primary;
+}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

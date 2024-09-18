@@ -1,0 +1,102 @@
+
+/* ============================================= */
+/*              Grid Variables                   */
+/* ============================================= */
+
+$grid-column-count: 12;
+$grid-gutter-width: 10px;
+
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+/* Container */
+.container {
+  padding: 0 $spacing-base;
+  max-width: 1400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em $spacing-base;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+/* Columns */
+[class^=col] {
+  flex-basis: 100%;
+  padding: $spacing-base;
+  margin-top: $spacing-base;
+  min-height: 25px;
+  border-radius: $border-radius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+/* Themed Columns */
+.theme.col-1 { background-color: $color-col-1; }
+.theme.col-2 { background-color: $color-col-2; }
+.theme.col-3 { background-color: $color-col-3; }
+.theme.col-4 { background-color: $color-col-4; }
+.theme.col-5 { background-color: $color-col-5; }
+.theme.col-6 { background-color: $color-col-6; }
+.theme.col-7 { background-color: $color-col-7; }
+.theme.col-8 { background-color: $color-col-8; }
+.theme.col-9 { background-color: $color-col-9; }
+.theme.col-10 { background-color: $color-col-10; }
+.theme.col-11 { background-color: $color-col-11; }
+.theme.col-12 { background-color: $color-col-12; }
+
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+
+@media (min-width: 768px) {
+
+  /* Flex direction change on larger screens */
+  .row {
+    flex-direction: row;
+  }
+
+  /* Column sizes */
+  .col-1 { flex-basis: (100% / $grid-column-count) * 1; }
+  .col-2 { flex-basis: (100% / $grid-column-count) * 2; }
+  .col-3 { flex-basis: (100% / $grid-column-count) * 3; }
+  .col-4 { flex-basis: (100% / $grid-column-count) * 4; }
+  .col-5 { flex-basis: (100% / $grid-column-count) * 5; }
+  .col-6 { flex-basis: (100% / $grid-column-count) * 6; }
+  .col-7 { flex-basis: (100% / $grid-column-count) * 7; }
+  .col-8 { flex-basis: (100% / $grid-column-count) * 8; }
+  .col-9 { flex-basis: (100% / $grid-column-count) * 9; }
+  .col-10 { flex-basis: (100% / $grid-column-count) * 10; }
+  .col-11 { flex-basis: (100% / $grid-column-count) * 11; }
+  .col-12 { flex-basis: (100% / $grid-column-count) * 12; }
+
+  /* Gutter space between columns */
+  [class^=col] + [class^=col] {
+    margin-left: $grid-gutter-width;
+  }
+}
+
+
+.card {
+  flex-basis: 100%;
+  padding: $spacing-base;
+  background-color: $color-primary;
+  border-radius: $border-radius;
+}
+

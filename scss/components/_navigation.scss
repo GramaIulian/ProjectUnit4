@@ -1,0 +1,20 @@
+
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+
+
+.nav-link {
+  text-align: center;
+  border-radius: $border-radius;
+  padding: $spacing-base 0;
+  display: block;
+  width: 100%;
+  transition: background-color $transition-duration $transition-ease,
+              color $transition-duration $transition-ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: $color-primary;
+}
