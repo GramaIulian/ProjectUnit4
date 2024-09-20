@@ -73,24 +73,24 @@ $grid-gutter-width: 10px;
   }
 
   /* Column sizes */
-  .col-1 { flex-basis: (100% / $grid-column-count) * 1; }
-  .col-2 { flex-basis: (100% / $grid-column-count) * 2; }
-  .col-3 { flex-basis: (100% / $grid-column-count) * 3; }
-  .col-4 { flex-basis: (100% / $grid-column-count) * 4; }
-  .col-5 { flex-basis: (100% / $grid-column-count) * 5; }
-  .col-6 { flex-basis: (100% / $grid-column-count) * 6; }
-  .col-7 { flex-basis: (100% / $grid-column-count) * 7; }
-  .col-8 { flex-basis: (100% / $grid-column-count) * 8; }
-  .col-9 { flex-basis: (100% / $grid-column-count) * 9; }
-  .col-10 { flex-basis: (100% / $grid-column-count) * 10; }
-  .col-11 { flex-basis: (100% / $grid-column-count) * 11; }
-  .col-12 { flex-basis: (100% / $grid-column-count) * 12; }
+  .col-1 { flex-basis: calc((100% / $grid-column-count) * 1); }
+  .col-2 { flex-basis: calc((100% / $grid-column-count) * 2); }
+  .col-3 { flex-basis: calc((100% / $grid-column-count) * 3); }
+  .col-4 { flex-basis: calc(100% / $grid-column-count) * 4; }
+  .col-5 { flex-basis: calc((100% / $grid-column-count) * 5); }
+  .col-6 { flex-basis: calc((100% / $grid-column-count) * 6); }
+  .col-7 { flex-basis: calc((100% / $grid-column-count) * 7); }
+  .col-8 { flex-basis: calc((100% / $grid-column-count) * 8); }
+  .col-9 { flex-basis: calc((100% / $grid-column-count) * 9); }
+  .col-10 { flex-basis: calc((100% / $grid-column-count) * 10); }
+  .col-11 { flex-basis: calc((100% / $grid-column-count) * 11); }
+  .col-12 { flex-basis: calc((100% / $grid-column-count) * 12); }
 
   /* Gutter space between columns */
   [class^=col] + [class^=col] {
     margin-left: $grid-gutter-width;
-  }
-}
+  } 
+} 
 
 
 .card {
